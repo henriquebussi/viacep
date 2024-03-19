@@ -7,6 +7,28 @@ function limpa_formulário_cep() {
     document.getElementById('ibge').value=("");
 }
 
+const apagar = document.getElementById('apagar')
+function limpa_formulário_cep() {
+    //Limpa valores do formulário de cep.
+    document.getElementById('cep').value=("");
+    document.getElementById('rua').value=("");
+    document.getElementById('bairro').value=("");
+    document.getElementById('cidade').value=("");
+    document.getElementById('uf').value=("");
+    document.getElementById('ibge').value=("");
+}
+
+apagar.addEventListener('click', () => {
+    limpa_formulário_cep()
+})
+
+const pesquisa = document.getElementById('pesquisa')
+pesquisa.addEventListener('click', () => {
+    pesquisacep(input.value)
+})
+
+const input = document.getElementById('cep')
+
 function meu_callback(conteudo) {
 if (!("erro" in conteudo)) {
     //Atualiza os campos com os valores.

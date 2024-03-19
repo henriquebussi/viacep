@@ -4,41 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="png" href="./image/icon.png">
     <title>VIA-CEP</title>
 </head>
 <body>
     <nav id="navbar">
         <div></div>
         <div>
-            <p>aaaaa</p>
-            <img src="" alt="">
+            <a href="https://www.google.com/search?q=corno&tbm=isch&ved=2ahUKEwjU_aznhYGFAxXpB7kGHeqSAkIQ2-cCegQIABAA&oq=corno&gs_lp=EgNpbWciBWNvcm5vMgUQABiABDIFEAAYgAQyBRAAGIAESLkRUIkIWNUMcAB4AJABAJgBowGgAdUFqgEDMC42uAEDyAEA-AEBigILZ3dzLXdpei1pbWfCAgQQIxgnwgIIEAAYgAQYsQPCAg0QABiABBiKBRhDGLEDwgIKEAAYgAQYigUYQ4gGAQ&sclient=img&ei=a-X5ZZScHemP5OUP6qWKkAQ&bih=730&biw=1536&prmd=ivnsmbtz&rlz=1C1GCEU_pt-BRBR1041BR1041#imgrc=6MjAtFJebxMUMM">
+                <img src="./image/profilepic.jpg" alt="" id="profpic">
+        </a>
         </div>
     </nav>
 
     <header></header>
 
     <main id="main">
-        <form method="get" action=".">
-            <label>Cep:
-            <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
-                   onblur="pesquisacep(this.value);" /></label><br />
-            <label>Rua:
-            <input name="rua" type="text" id="rua" size="60" /></label><br />
-            <label>Bairro:
-            <input name="bairro" type="text" id="bairro" size="40" /></label><br />
-            <label>Cidade:
-            <input name="cidade" type="text" id="cidade" size="40" /></label><br />
-            <label>Estado:
-            <input name="uf" type="text" id="uf" size="2" /></label><br />
-            <label>IBGE:
-            <input name="ibge" type="text" id="ibge" size="8" /></label><br />
-          </form>
+        <form method="get" action="." id="forms">
+            <div>
+                <label>
+                <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                    onblur="pesquisacep(this.value); " placeholder="CEP"/></label><br />
+                <label>
+                <input name="rua" type="text" id="rua" size="60" placeholder="Rua" class="showinfo"/></label><br />
+                <label>
+                <input name="bairro" type="text" id="bairro" size="40" placeholder="Bairro" class="showinfo"/></label><br />
+                <label>
+                <input name="cidade" type="text" id="cidade" size="40" class="showinfo" placeholder="Cidade"/></label><br />
+                <label>
+                <input name="uf" type="text" id="uf" size="2" class="showinfo" placeholder="Estado"/></label><br />
+                <label>
+                <input name="ibge" type="text" id="ibge" size="8" class="showinfo" placeholder="IBGE"/></label><br />
+            </form>
+            <button id="pesquisar">
+                Pesquisar
+              </button>
+
+            <button id="apagar">
+                Apagar
+              </button>   
+    
+            </div>
+          
+
         <div id="maps">
             
         </div>    
     </main>
 
-    <footer></footer>
+    <footer>
+        <div>
+            <pre id="creditos"> 
+                Créditos: Henrique Bussi, Juan Rodrigues e Mateus Silverio
+            </pre>
+        </div>
+    </footer>
     
     
 </body>
