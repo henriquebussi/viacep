@@ -1,0 +1,40 @@
+:root{
+    --clr-navbar: #3F7394;
+    --clr-input: #FFFFFE;
+    --clr-font: #183148;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#cep{
+    background-color: var(--clr-input);
+}
+
+#navbar{
+    display: flex;
+    background-color: var(--clr-navbar);
+    justify-content: space-between;
+    height: 7vh;
+}
+
+#main{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+}
+
+#maps{
+    width: 100px;
+    background-color: springgreen;
+}
+
+#cep{
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: var(--clr-input);
+    width: 400px;
+}
