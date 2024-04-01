@@ -1,0 +1,55 @@
+:root{
+    --background-clr: #BE74E5;
+    --border-clr: #8D57AA;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow: hidden;
+    height: 100vw;
+    background-color: var(--border-clr);
+}
+.realbody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 98.7vh;;
+    padding: 5px;
+    background-image: linear-gradient(to bottom, var(--background-clr) 0%, var(--background-clr) 100%), linear-gradient(to bottom, var(--border-clr) 0%, var(--border-clr) 100%);
+    background-clip: content-box, padding-box;
+  }
+
+.inputop{
+    margin-top: 10px;
+    height: 8vh;
+    width: 60vh;
+    text-align: center;
+    font-size: 3vh;
+}
+
+#buttons{
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+.buttons{
+    margin-right: 5px;
+    width: 10vh;   
+    height: 4vh;
+    background-color: black;
+    color: white; 
+    font-size: 2vh;
+}
+
+#logar{
+    font-size: 5vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 10px;
+}
